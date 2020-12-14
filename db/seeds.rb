@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'faker'
+
+
+collection = Collection.create!(title: "Cat Collection", created_by: "Ahmad")
+
+cat = Cat.create!(name: "Snowy", sex: "Female", colour: "White", favouritefood: "Dominos Garlic Dip", collection_id: collection.id)
